@@ -1,0 +1,250 @@
+/* Start Landing Page */
+.landing {
+	position: relative;
+	background-color: var(--sec-color);
+}
+.landing .container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.landing .container .text {
+	max-width: 400px;
+}
+.landing .container .text p {
+	margin-bottom: 25px;
+	color: #989898;
+}
+.landing .container .text .btns {
+	display: flex;
+	gap: 15px;
+}
+.landing .container .img-holder {
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+}
+.landing .container .img-holder img {
+	max-width: 500px;
+}
+@media (max-width: 992px) {
+	.landing .container .img-holder img {
+		max-width: 330px;
+	}
+}
+@media (max-width: 768px) {
+	.landing .container .img-holder {
+		display: none;
+	}
+	.landing .container {
+		justify-content: center;
+		text-align: center;
+	}
+	.landing .container .btns {
+		justify-content: center;
+	}
+}
+@media (max-width: 400px) {
+	.landing .container .text h4 {
+		font-size: 17px;
+	}
+	.big-title {
+		font-size: 35px;
+	}
+
+}
+/* End Landing Page */
+/* Start Shop */
+.shop {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.shop .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 40px;
+}
+@media (max-width: 350px) {
+	.shop .container {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+}
+.shop .container .box {
+	height: 280px;
+	padding: 15px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.shop .container .box:first-child {
+	background-color: #94ddd6;
+}
+.shop .container .box:nth-child(2) {
+	background-color: #f5891a;
+}
+.shop .container .box:last-child {
+	background-color: #a6d523;
+}
+.shop .container .box .text {
+	max-width: 200px;
+	color: white;
+}
+.shop .container .box .text h2 {
+	font-size: 27px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+.shop .container .box .text a:hover i {
+	left: 10px;
+}
+.shop .container .box img {
+	position: absolute;
+	bottom: 0px;
+	right: 0%;
+}
+/* End Shop */
+/* Start The Offer */
+.offer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.offer .container {
+	background-color: #a2d121;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	min-height: 225px;
+	padding: 20px;
+	gap: 50px;
+	color: white;
+}
+.offer .container .left {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 300px;
+	font-size: 70px;
+	font-weight: 500;
+}
+.offer .container .left span {
+	color: var(--yellow-color);
+	color: #c2ed48;
+}
+.offer .container .left a {
+	font-size: 18px;
+}
+.offer .container .middle {
+	max-width: 360px;
+}
+.offer .container .img-holder {
+	position: absolute;
+	bottom: -5px;
+	right: 0;
+}
+.offer .container .img-holder img {
+	max-width: 100%;
+}
+@media (max-width: 1200px) {
+	.offer .container {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+@media (max-width: 768px) {
+	.offer .container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.offer .container .img-holder {
+		display: none;
+	}
+}
+/* End The Offer */
+/* Start About => Experience */
+.about {
+	min-height: 100vh;
+	background-color: var(--sec-color);
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.about .img-holder {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+}
+.about .img-holder img {
+	max-width: 100%;
+}
+.about .container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.about .container .text {
+	background-color: white;
+	position: relative;
+	padding: 50px 40px;
+	max-width: 520px;
+}
+.about .container .text::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--yellow-color);
+}
+.about .container .text .big-title {
+	line-height: 1.2;
+	margin-bottom: 15px;
+	font-size: 40px;
+}
+.about .container .text p {
+	font-size: 18px;
+	margin-bottom: 12px;
+	color: #989898;
+}
+@media (max-width: 500px) {
+	.about .container .text {
+		max-width: 300px;
+	}
+	.about .container .text .big-title {
+		font-size: 24px;
+	}
+	.about .container .text p {
+		font-size: 15px;
+	}
+}
+/* End About => Experience */
+/* Start products Again with shuffle  */
+.products .shuffle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 10px;
+}
+.products .shuffle li {
+	font-size: 18px;
+	padding: 15px;
+	cursor: pointer;
+	transition: var(--main-transition);
+}
+.products .shuffle li:hover,
+.products .shuffle li.on {
+	color: var(--yellow-color);
+}
+@media (max-width: 768px) {
+	.products .shuffle li {
+    font-size: 12px;
+	}
+}
+/* End products Again with shuffle  */
+/* footer .container .links li  */

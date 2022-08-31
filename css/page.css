@@ -1,0 +1,233 @@
+/* Start My Alert */
+.my-alert {
+	height: 70px;
+	background-color: green;
+	max-width: 600px;
+	margin: 20px auto;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: white;
+	display: none;
+}
+/* End My Alert */
+/* Start Show Product */
+.show-product .container {
+	display: flex;
+	gap: 20px;
+}
+.show-product {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.show-product .left-side {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.show-product .imgs-holder {
+	width: 70px;
+}
+.show-product .imgs-holder * {
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.show-product .imgs-holder i {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--yellow-color);
+	color: white;
+}
+.show-product .imgs-holder .box {
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.show-product .imgs-holder .box:hover {
+	border: 1px solid var(--yellow-color);
+}
+.show-product .imgs-holder .box img {
+	width: 100%;
+}
+.show-product .img-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 340px;
+}
+.show-product .img-holder img {
+	width: 100%;
+}
+.show-product .right-side .big-title {
+	font-size: 40px;
+}
+.show-product .right-side .stars {
+	justify-content: flex-start;
+}
+.show-product .right-side .output {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.show-product .right-side .output .count {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+}
+.show-product .right-side .output .count * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+.show-product .right-side .avail {
+	padding-left: 20px;
+	font-size: 40px;
+}
+.show-product .right-side .output .count h3 {
+	border-style: none solid;
+	border-width: 0 1px;
+	padding: 12px;
+	border-color: transparent #CCC;
+}
+.show-product .right-side .output .count i {
+	cursor: pointer;
+}
+.show-product .right-side .text .title {
+	display: flex;
+	align-items: center;
+	margin: 30px 0 15px;
+	gap: 25px;
+}
+.show-product .right-side .text .title .stars {
+	gap: 10px;
+}
+.show-product .right-side .text .title .stars li {
+	cursor: pointer;
+}
+.show-product .right-side .text p {
+	font-size: 18px;
+	padding: 0 12px;
+}
+.show-product .right-side .cards {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.show-product .right-side .cards .card {
+	display: flex;
+	gap: 2px;
+	align-items: center;
+	border: 2px solid #ccc;
+	padding: 15px 25px;
+	border-radius: 4px;
+	width: 240px;
+}
+.show-product .right-side .cards .card img {
+	max-width: 100px;
+	height: 80px;
+}
+.right-side .title {
+	color: black;
+	margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+	.show-product .container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.show-product .right-side .stars {
+		justify-content: center;
+	}
+	.show-product .right-side .output {
+    justify-content: center;
+	}
+	.show-product .right-side .text .title {
+		justify-content: center;
+	}
+	.show-product .right-side .cards {
+		justify-content: center;
+	}
+}
+@media (max-width: 570px) {
+	.show-product .left-side {
+    flex-direction: column;
+	}
+	.show-product .imgs-holder {
+    width: 100%;
+		display: flex;
+		gap: 10px;
+	}
+	.show-product .imgs-holder i {
+		transform: rotate(-90deg);
+	}
+	.show-product .right-side .cards {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/* End Show Product */
+/* Start Infos */
+.infos {
+	
+}
+.infos .container {
+
+}
+.infos .container .text {
+	display: flex;
+	padding: 0 4px;
+	gap: 30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #CCC;
+}
+.infos .container .text li {
+	padding: 20px 2px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.infos .container .text li::before {
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: var(--yellow-color);
+	position: absolute;
+	z-index: 2;
+	bottom: -2px;
+	left: -220px;
+	transition: var(--main-transition);
+}
+.infos .container .text li:hover::before,
+.infos .container .text li.active::before {
+	left: 0;
+}
+.infos .container  p {
+	padding: 12px 10px;
+	font-size: 18px;
+	color: var(--dark-color);
+}
+@media (max-width: 500px) {
+	.infos .container .text {
+		flex-direction: column;
+	}
+	.infos .container .text li::before {
+		left: -1000px;
+	}
+	.infos .container .text li,
+	.infos .container  p  {
+		font-size: 14px;
+	}
+}
+/* End Infos */
+.products .big-title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+

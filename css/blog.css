@@ -1,0 +1,38 @@
+.our-products .right-side .cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 40px;
+}
+.our-products .right-side .cards .box {
+	background-color: var(--sec-color);
+	overflow: hidden;
+}
+.our-products .right-side .cards .box img {
+	width: 100%;
+}
+.our-products .right-side .cards .box .content {
+	padding: 20px;
+}
+.our-products .right-side .cards .box .content .date span {
+	color: var(--yellow-color);
+	font-size: 18px;
+}
+.our-products .right-side .cards .box .content h3 {
+	font-size: 22px;
+	margin: 10px 0;
+}
+.our-products .right-side .cards .box .content .desc {
+	font-size: 18px;
+}
+/*  */
+@media (max-width: 600px) {
+	.our-products .container.blog {
+		flex-direction: column;
+	}
+	.our-products .right-side .cards .box .content h3 {
+		font-size: 18px;
+	}
+	.our-products .right-side .cards .box .content .desc {
+		font-size: 16px;
+	}
+}

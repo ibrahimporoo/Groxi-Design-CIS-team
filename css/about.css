@@ -1,0 +1,55 @@
+/* Start Pricing */
+.pricing {
+	background-color: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.pricing .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.pricing .container .img-holder {
+	max-width: 700px;
+}
+.pricing .container .img-holder img {
+	width: 100%;
+}
+.pricing .container .text {
+	max-width: 450px;
+}
+.pricing .container .text .title {
+	color: black;
+	font-size: 30px;
+	line-height: 1.2;
+	margin-bottom: 20px;	
+}
+.pricing .container .text p {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #EEE;
+	padding: 25px 10px;
+	font-size: 18px;
+	color: var(--dark-color);
+}
+@media(max-width: 1200px) {
+	.pricing .container {
+		flex-direction: column;
+		text-align: center;
+	}
+	.pricing .container .text {
+		max-width: 700px;
+	}
+}
+/* End Pricing */
+/* Start Testimonials */
+.testimonials .container .box .big-title {
+	font-size: 30px;
+}
+/* End Testimonials */
+/* Start Video */
+.video .container img {
+	width: 100%;
+	cursor: pointer;
+}
+/* End Video */
