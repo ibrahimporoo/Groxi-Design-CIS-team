@@ -675,6 +675,7 @@ footer .copy-right .social-icons li i {
 	align-items: center;
 	gap: 10px;
 	padding: 5px 4px;
+	cursor: pointer;
 }
 .our-products .container .left-side .categories li label {
 	width: 15px;
@@ -697,8 +698,11 @@ footer .copy-right .social-icons li i {
 	display: inline-block;
 }
 .our-products .container .left-side .categories label + p {
-	font-size: 14px;
+	font-size: 16px;
 	color: #989898;
+}
+.our-products .container .left-side .categories li.on p {
+	color: black;
 }
 .our-products .container .left-side .filter-price .range {
 	-webkit-appearance: none;
@@ -791,6 +795,9 @@ footer .copy-right .social-icons li i {
 	color: #989898;
 	cursor: pointer;
 }
+.our-products .container .right-side .style .show i.on {
+	background-color: var(--yellow-color);
+}
 .our-products .container .right-side .style .show i:hover,
 .our-products .container .right-side .style .show i.on {
 	background-color: var(--yellow-color);
@@ -848,6 +855,11 @@ footer .copy-right .social-icons li i {
 @media (max-width: 400px) {
 	.our-products .container .right-side .style .show span {
 		font-size: 12px;
+	}
+}
+@media (min-width: 992px) {
+	.our-products .container .left-side ul:not(.stars) {
+		display: block !important;
 	}
 }
 /* End Trending Products */
